@@ -1,0 +1,307 @@
+%html{xmlns: "http://www.w3.org/1999/xhtml"}
+  %head
+    %title SimpleScheme Magazine
+    %meta{content: "text/html; charset=US-ASCII", "http-equiv" => "Content-Type"}/
+    / %link{href: "style.css", rel: "stylesheet", type: "text/css"}/
+    / /[if lte IE 6] <link rel="stylesheet" type="text/css" href="ie.css" />
+    / %script{src: "js/jquery-1.3.2.min.js", type: "text/javascript"}
+    / %script{src: "js/jquery.cycle.all.min.js", type: "text/javascript"}
+    / %script{src: "js/script.js", type: "text/javascript"}
+  %body
+    / BEGIN wrapper
+    #wrapper
+      / BEGIN header
+      #header
+        / begin pages
+        %ul.pages
+          %li
+            %a{href: "http://www.free-css.com/"} Home
+          %li
+            %a{href: "about.html"} About Us
+          %li
+            %a{href: "page.html"} Demo Page
+          %li
+            %a{href: "contact.html"} Contact Page
+        / end pages
+        %form{action: "http://www.free-css.com/"}
+          %input#s{name: "s", type: "text", value: ""}/
+          %button{type: "submit"} Search
+        .break
+        / begin logo
+        .logo
+          %h1
+            %a{href: "http://www.free-css.com/"} SimpleScheme Magazine
+          %p Free CSS Template
+        / end logo
+        / begin sponsor
+        .sponsor
+          %a{href: "http://www.free-css.com/"}
+            =image_tag"ad468x60.gif"
+        / end sponsor
+        / begin categories
+        %ul.categories
+          %li
+            %a{href: "http://www.free-css.com/"} Advertising
+          %li
+            %a{href: "http://www.free-css.com/"} Entertainment
+          %li
+            %a{href: "http://www.free-css.com/"} Fashion
+          %li
+            %a{href: "http://www.free-css.com/"} Lifestyle
+          %li
+            %a{href: "http://www.free-css.com/"} Marketing
+          %li
+            %a{href: "http://www.free-css.com/"} Pictures
+          %li
+            %a{href: "http://www.free-css.com/"} Resources
+          %li
+            %a{href: "http://www.free-css.com/"} Videos
+        / end categories
+      / END header
+      / BEGIN content
+      #content
+        / begin featured
+        #featured
+          .post
+            %h2
+              %a{href: "http://www.free-css.com/"} Top 10 Make Money Online Tips for 2009
+            %p.details
+              JUN 10 2009 |
+              %a{href: "http://www.free-css.com/"} ChiQ Montes
+              |
+              %a{href: "http://www.free-css.com/"} Advertising
+              |
+              %a{href: "http://www.free-css.com/"} 3 Comments
+            .thumb
+              %a{href: "http://www.free-css.com/"}
+                =image_tag "_featured.jpg"
+            %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi quis risus at nisl blandit feugiat. Ut vel orci quis sem dapibus iaculis. Aliquam ut nunc quis nisi tincidunt tincidunt. Pellentesque enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque enim. Misl blandit feugiat. Ut vel orci quis sem dapibus iaculis.
+            %p.readmore
+              [
+              %a{href: "http://www.free-css.com/"} read more
+              ]
+            %p.tags
+              TAGS:
+              = succeed "," do
+                %a{href: "http://www.free-css.com/"} money
+              = succeed "," do
+                %a{href: "http://www.free-css.com/"} currency
+              %a{href: "http://www.free-css.com/"} product
+            .break
+          .post
+            %h2
+              %a{href: "http://www.free-css.com/"} Top 10 Make Money Online Tips for 2009
+            %p.details
+              JUN 10 2009 |
+              %a{href: "http://www.free-css.com/"} ChiQ Montes
+              |
+              %a{href: "http://www.free-css.com/"} Advertising
+              |
+              %a{href: "http://www.free-css.com/"} 3 Comments
+            .thumb
+              %a{href: "http://www.free-css.com/"}
+                =image_tag "_featured.jpg"
+            %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi quis risus at nisl blandit feugiat. Ut vel orci quis sem dapibus iaculis. Aliquam ut nunc quis nisi tincidunt tincidunt. Pellentesque enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque enim. Misl blandit feugiat. Ut vel orci quis sem dapibus iaculis.
+            %p.readmore
+              [
+              %a{href: "http://www.free-css.com/"} read more
+              ]
+            %p.tags
+              TAGS:
+              = succeed "," do
+                %a{href: "http://www.free-css.com/"} money
+              = succeed "," do
+                %a{href: "http://www.free-css.com/"} currency
+              %a{href: "http://www.free-css.com/"} product
+            .break
+        / end featured
+        / begin recent posts
+        .recent
+          / begin post
+          .o.post
+            %a{href: "http://www.free-css.com/"}
+              =image_tag "_thumb.jpg"
+            %h2
+              %a{href: "http://www.free-css.com/"} Special Twitter Icons for Sale
+            %p Ut vel orci quis sem dapibus iaculis. Aliquam ut nunc quis nisi tincidunt tincidunt. Pellentesque enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque enim. Misl blandit feugiat. Ut vel orci quis sem dapibus iaculis.
+            %p.readmore
+              [
+              %a{href: "http://www.free-css.com/"} read more
+              ]
+            .break
+          / end post
+          / begin post
+          .e.post
+            %a{href: "http://www.free-css.com/"}
+              =image_tag "_thumb.jpg"
+            %h2
+              %a{href: "http://www.free-css.com/"} Special Twitter Icons for Sale
+            %p Ut vel orci quis sem dapibus iaculis. Aliquam ut nunc quis nisi tincidunt tincidunt. Pellentesque enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque enim. Misl blandit feugiat. Ut vel orci quis sem dapibus iaculis.
+            %p.readmore
+              [
+              %a{href: "http://www.free-css.com/"} read more
+              ]
+            .break
+          / end post
+          / begin post
+          .o.post
+            %a{href: "http://www.free-css.com/"}
+              =image_tag "_thumb.jpg"
+            %h2
+              %a{href: "http://www.free-css.com/"} Special Twitter Icons for Sale
+            %p Ut vel orci quis sem dapibus iaculis. Aliquam ut nunc quis nisi tincidunt tincidunt. Pellentesque enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque enim. Misl blandit feugiat. Ut vel orci quis sem dapibus iaculis.
+            %p.readmore
+              [
+              %a{href: "http://www.free-css.com/"} read more
+              ]
+            .break
+          / end post
+          / begin post
+          .e.post
+            %a{href: "http://www.free-css.com/"}
+              =image_tag "_thumb.jpg"
+            %h2
+              %a{href: "http://www.free-css.com/"} Special Twitter Icons for Sale
+            %p Ut vel orci quis sem dapibus iaculis. Aliquam ut nunc quis nisi tincidunt tincidunt. Pellentesque enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque enim. Misl blandit feugiat. Ut vel orci quis sem dapibus iaculis.
+            %p.readmore
+              [
+              %a{href: "http://www.free-css.com/"} read more
+              ]
+            .break
+          / end post
+        / end recent posts
+      / END content
+      / BEGIN sidebar
+      #sidebar
+        / begin sponsors
+        .box
+          %p.sponsors
+            %a{href: "http://www.free-css.com/"}
+              =image_tag "ad125x125.jpg"
+            %a{href: "http://www.free-css.com/"}
+              =image_tag "ad125x125.jpg"
+          %ul.bookmarks
+            %li.rss
+              %a{href: "http://www.free-css.com/"} Subscribe via RSS feed
+            %li.twt
+              %a{href: "http://www.free-css.com/"} Follow me on Twitter
+            %li.fcb
+              %a{href: "http://www.free-css.com/"} Connect with me on Facebook
+            %li.ldi
+              %a{href: "http://www.free-css.com/"} Connect with me on LinkedIn
+        / end sponsors
+        / begin popular posts
+        .box
+          %h2 Popular Posts
+          %ul.popular
+            %li
+              %a{href: "http://www.free-css.com/"} Top 10 Ways to Make Money Online
+              %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse interdum..
+            %li
+              %a{href: "http://www.free-css.com/"} Top 10 Ways to Make Money Online
+              %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse interdum..
+            %li
+              %a{href: "http://www.free-css.com/"} Top 10 Ways to Make Money Online
+              %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse interdum..
+        / end popular posts
+        / begin flickr images
+        .box
+          %h2 Flickr Images
+          .flickr
+            %a{href: "http://www.free-css.com/"}
+              =image_tag"_flickr.jpg"
+            %a{href: "http://www.free-css.com/"}
+              =image_tag"_flickr.jpg"
+            %a{href: "http://www.free-css.com/"}
+              =image_tag"_flickr.jpg"
+            %a{href: "http://www.free-css.com/"}
+              =image_tag"_flickr.jpg"
+            %a{href: "http://www.free-css.com/"}
+              =image_tag"_flickr.jpg"
+            %a{href: "http://www.free-css.com/"}
+              =image_tag"_flickr.jpg"
+        / end flickr images
+        / begin featured video
+        .box
+          %h2 Featured Video
+          .video
+            =image_tag "_video.jpg"
+        / end featured video
+        / begin tag cloud
+        .box
+          %h2 Tag Cloud
+          .tags
+            %a{href: "http://www.free-css.com/"} Link
+        / end tag cloud
+        / BEGIN left
+        .l
+          / begin categories
+          .box
+            %h2 Categories
+            %ul
+              %li
+                %a{href: "http://www.free-css.com/"} Advertising
+              %li
+                %a{href: "http://www.free-css.com/"} Fashion
+              %li
+                %a{href: "http://www.free-css.com/"} Gadgets
+              %li
+                %a{href: "http://www.free-css.com/"} Lifestyle
+              %li
+                %a{href: "http://www.free-css.com/"} Networking
+              %li
+                %a{href: "http://www.free-css.com/"} News
+              %li
+                %a{href: "http://www.free-css.com/"} Sports
+          / end categories
+          / begin meta
+          .box
+            %h2 Meta
+            %ul
+              %li
+                %a{href: "http://www.free-css.com/"} Log in
+              %li
+                %a{href: "http://www.free-css.com/"} Valid XHTML
+          / end meta
+        / END left
+        / BEGIN right
+        .r
+          / begin archives
+          .box
+            %h2 Archives
+            %ul
+              %li
+                %a{href: "http://www.free-css.com/"} June 2009
+              %li
+                %a{href: "http://www.free-css.com/"} May 2009
+              %li
+                %a{href: "http://www.free-css.com/"} April 2009
+              %li
+                %a{href: "http://www.free-css.com/"} March 2009
+              %li
+                %a{href: "http://www.free-css.com/"} February 2009
+          / end archives
+          / begin blogroll
+          .box
+            %h2 Blogroll
+            %ul
+              %li
+                %a{href: "http://www.free-css.com/"} Documentation
+              %li
+                %a{href: "http://www.free-css.com/"} Suggest Ideas
+              %li
+                %a{href: "http://www.free-css.com/"} Support Forum
+          / end archives
+        / END right
+      / END sidebar
+    / END wrapper
+    / BEGIN footer
+    #footer
+      %p.l
+        Copyright © 2009 -
+        %a{href: "http://www.free-css.com/"} Website Name
+        \· All Rights Reserved | Template by:
+        %a{href: "http://www.wpthemedesigner.com/"} WordPress Designer
+        | Get More
+        %a{href: "http://www.free-css.com/"} Free CSS Templates
+    / END footer
