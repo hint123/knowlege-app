@@ -15,10 +15,9 @@ development:
  
 production:
   adapter: postgresql
-  encoding: utf8
+  encoding: unicode
   database: Mysite2
   username: root
   password: root
   pool: 5
- 
-
+  port: 5432
