@@ -1,0 +1,61 @@
+#featured
+  .post
+    %h2
+      %a{href: "#"} Top 10 Make Money Online Tips for 2009
+    %p.details
+      JUN 10 2009 |
+      %a{href: "#"} ChiQ Montes
+      |
+      %a{href: "#"} Advertising
+      |
+      %a{href: "#"} 3 Comments
+    .thumb
+      %a{href: "#"}
+        =image_tag "_featured.jpg"
+    %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi quis risus at nisl blandit feugiat. Ut vel orci quis sem dapibus iaculis. Aliquam ut nunc quis nisi tincidunt tincidunt. Pellentesque enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque enim. Misl blandit feugiat. Ut vel orci quis sem dapibus iaculis.
+    %p.readmore
+      [
+      %a{href: "#"} read more
+      ]
+    %p.tags
+      TAGS:
+      = succeed "," do
+        %a{href: "#"} money
+      = succeed "," do
+        %a{href: "#"} currency
+      %a{href: "#"} product
+    .break
+  .post
+    %h2
+      %a{href: "#"} Top 10 Make Money Online Tips for 2009
+    %p.details
+      JUN 10 2009 |
+      %a{href: "#"} ChiQ Montes
+      |
+      %a{href: "#"} Advertising
+      |
+      %a{href: "#"} 3 Comments
+    .thumb
+      %a{href: "#"}
+        =image_tag "_featured.jpg"
+    %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi quis risus at nisl blandit feugiat. Ut vel orci quis sem dapibus iaculis. Aliquam ut nunc quis nisi tincidunt tincidunt. Pellentesque enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque enim. Misl blandit feugiat. Ut vel orci quis sem dapibus iaculis.
+    %p.readmore
+      [
+      %a{href: "#"} read more
+      ]
+    %p.tags
+      TAGS:
+      = succeed "," do
+        %a{href: "#"} money
+      = succeed "," do
+        %a{href: "#"} currency
+      %a{href: "#"} product
+    .break
+/ end featured
+/ begin recent posts
+.recent
+  / begin post
+  .o.post
+    = render 'partials/latest_jobs',:jobs=>@jobs
+  / end post
+/ end recent posts

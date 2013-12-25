@@ -1,4 +1,6 @@
 MySite::Application.routes.draw do
+  resources :jobs
+
   # get "home/index"
 
   devise_for :admin_users, ActiveAdmin::Devise.config

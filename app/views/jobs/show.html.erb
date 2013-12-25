@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Board name:</b>
+  <%= @job.board_name %>
+</p>
+
+<p>
+  <b>Post name:</b>
+  <%= @job.post_name %>
+</p>
+
+<p>
+  <b>Qualification:</b>
+  <%= @job.qualification %>
+</p>
+
+<p>
+  <b>Last date:</b>
+  <%= @job.last_date %>
+</p>
+
+<p>
+  <b>More:</b>
+  <%= @job.more %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @job.type %>
+</p>
+
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

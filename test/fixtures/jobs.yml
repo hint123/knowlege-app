@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  board_name: MyString
+  post_name: MyString
+  qualification: MyString
+  last_date: MyString
+  more: MyString
+  type: 
+
+two:
+  board_name: MyString
+  post_name: MyString
+  qualification: MyString
+  last_date: MyString
+  more: MyString
+  type: 
