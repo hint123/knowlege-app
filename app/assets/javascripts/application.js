@@ -13,3 +13,34 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+/*
+ * $(document).on('click', '#bank-job', function(){
+  var request = $.ajax({
+    url:" /banks",
+    type: "GET"
+  });
+  request.done(function(msg) {
+  });
+  request.fail(function(jqXHR, textStatus) {
+    alert( "Request failed: " + textStatus );
+  });
+});
+ * */
+$(document).ready(function(){
+	$('.header-menus').click(function(){
+		var path = $(this).attr('url');
+		$.ajax({
+				url: path,
+				type :'get',
+				//dataType : 'script',
+        //async : true,
+
+				success: function(success){
+					// alert(success);
+				},
+				error: function(error){
+
+				}
+		})
+	})
+})

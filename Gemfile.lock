@@ -169,6 +169,7 @@ DEPENDENCIES
   activeadmin
   coffee-rails (~> 3.2.1)
   debugger
+  devise
   haml
   jquery-rails
   mysql2

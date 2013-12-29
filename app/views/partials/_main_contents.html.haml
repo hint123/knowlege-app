@@ -53,9 +53,7 @@
     .break
 / end featured
 / begin recent posts
-.recent
-  / begin post
-  .o.post
-    = render 'partials/latest_jobs',:jobs=>@jobs
+#bank_data
+  / = render 'partials/banks' 
   / end post
 / end recent posts

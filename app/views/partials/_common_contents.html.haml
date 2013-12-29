@@ -1,0 +1,18 @@
+%head
+  %title SimpleScheme Magazine
+  %meta{content: "text/html; charset=US-ASCII", "http-equiv" => "Content-Type"}/
+%body
+  / BEGIN wrapper
+  #wrapper
+    / BEGIN header
+    #header
+      = render 'partials/header'
+    #sidebar
+      = render 'partials/right_side_bar'
+    #sidebar-left
+      = render 'partials/left_side_bar'
+    #content
+      = yield
+  / END wrapper
+  #footer
+    = render 'partials/footer'

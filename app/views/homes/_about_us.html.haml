@@ -1,0 +1,45 @@
+.single
+  %h2 Contact Us
+  %p Idnec nulla fuscinia ridictus nunc et morbi at morbi senean tincidunt. Antsempus morbi quis in sempus convallis dui vestie eu phasellentesquet nam. Pulvinareipsum sit nibh id nas eu magnisse alique id nam curabitur. Etenim consequam nec ant senean leo morbi urna velit rutrum consectum. Sedpretium nulla vel ero liberos facilis dis cursus adipiscing lacus intesque.
+/ end post
+#comments
+  #respond
+    %form#commentform{action: "javascript:void(0);",remote: true, method: "post"}
+      %p
+        %input#author{name: "name", size: "22", tabindex: "1", type: "text", value: ""}/
+        %label{for: "name"}
+          %small Name (required)
+      %p
+        %input#email{name: "email", size: "22", tabindex: "2", type: "text", value: ""}/
+        %label{for: "email"}
+          %small Mail (will not be published) (required)
+      %p
+        %input#url{name: "url", size: "22", tabindex: "3", type: "text", value: ""}/
+        %label{for: "url"}
+          %small Website
+      %p
+        %textarea#comment{cols: "100%", name: "website", rows: "10", tabindex: "4"}
+      %p
+        %button#submit{name: "submit", :remote=>'true',type: "submit",:id=>'contact_id'} Submit Comment
+/ end recent posts
+:javascript
+  $(document).ready(function(){
+    $('#submit_contact_id').click(function(){
+      var name    = $('#author').val();
+      var email    = $('#email').val();
+      var url    = $('#url').val();
+      var comment    = $('#comment').val();
+      $.ajax({
+        url: '/about_us/about',
+        type :'post',
+        data:{"name": name,"email": email, "url": url ,"comment": comment},
+
+        success: function(success){
+          // alert(success);
+        },
+        error: function(error){
+
+        }
+    })
+    })
+  })

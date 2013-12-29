@@ -1,6 +1,17 @@
 MySite::Application.routes.draw do
-  resources :jobs
+  post "about_us/about" => 'about_us#about',:as=>'about_us'
 
+  resources :jobs,:only=>[:index]
+  resources :states,:only=>[:index]
+  resources :banks do
+    #collection do
+      #get :banks_job
+    #end
+  end
+  resources :itjobs,:only=>[:index]
+  resources :homes,:only=>[:index]
+  resources :railways,:only=>[:index]
+  resources :teachers,:only=>[:index]
   # get "home/index"
 
   devise_for :admin_users, ActiveAdmin::Devise.config

@@ -1,0 +1,9 @@
+- unless states.blank? 
+  %table{border: "2"}
+    %tr
+      %th Name
+    - states.each do |state|
+      %tr
+        %td= state.name
+       
+    

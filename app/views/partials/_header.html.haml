@@ -1,12 +1,12 @@
 %ul.pages
   %li
-    %a{href: "#"} Home
+    = link_to 'Home','javascript:void(0);',:class=>'header-menus',:url=>'/homes'
   %li
-    %a{href: "about.html"} About Us
+    = link_to 'About Us','javascript:void(0);',:class=>'header-menus',:url=>'/homes'
   %li
-    %a{href: "page.html"} Demo Page
+    = link_to 'Demo Page','javascript:void(0);',:class=>'header-menus',:url=>'/homes'
   %li
-    %a{href: "contact.html"} Contact Page
+    = link_to 'Contact Page','javascript:void(0);',:class=>'header-menus',:url=>'/homes'
 / end pages
 %form{action: "#"}
   %input#s{name: "s", type: "text", value: ""}/
@@ -26,21 +26,21 @@
 / begin categories
 %ul.categories
   %li
-    %a{href: "#"} All India Govt Jobs
+    =link_to 'All India Govt Jobs','javascript:void(0);',:class=>'header-menus',:url=>'/states'
   %li
-    %a{href: "#"} State Govt Jobs
+    =link_to 'State Govt Jobs','javascript:void(0);',:class=>'header-menus',:url=>'/states',:class=>'header-menus'
   %li
-    %a{href: "#"} Railway Jobs
+    =link_to 'Bank Jobs', 'javascript:void(0);', :id=>'bank-job',:url=>'/banks',:class=>'header-menus'
   %li
-    %a{href: "#"} Teaching Jobs
+    =link_to 'Teaching Jobs','javascript:void(0);',:url=>'/teachers',:class=>'header-menus'
   %li
-    %a{href: "#"} IT Jobs
+    =link_to 'IT Jobs','javascript:void(0);',:url=>'/itjobs',:class=>'header-menus'
   %li
-    %a{href: "#"} Engineering Jobs
+    =link_to 'Engineering Jobs','javascript:void(0);',:url=>'/engineerings',:class=>'header-menus'
   %li
-    %a{href: "#"} Resources
+    =link_to 'Railway Jobs','javascript:void(0);',:url=>'/railways',:class=>'header-menus'
   %li
-    %a{href: "#"} Videos
+    =link_to 'Videos','javascript:void(0);',:url=>'/videos',:class=>'header-menus'
 / end categories
 / END header
 / BEGIN content

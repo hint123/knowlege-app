@@ -1,0 +1,17 @@
+- unless banks.blank? 
+  %table{border: "2"}
+    %tr
+      %th Board name
+      %th Post name
+      %th Qualification
+      %th Last date
+      %th More
+      %th Type
+    - banks.each do |job|
+      %tr
+        %td= job.post_name
+        %td= job.qualification
+        %td= job.last_date
+        %td= link_to job.more,'#'
+
+    

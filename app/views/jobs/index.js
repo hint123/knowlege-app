@@ -1,0 +1,1 @@
+$("#bank-data").html("<%= escape_javascript(render 'partials/banks',:banks =>banks) %>");
