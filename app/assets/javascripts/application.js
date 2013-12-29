@@ -32,8 +32,8 @@ $(document).ready(function(){
 		$.ajax({
 				url: path,
 				type :'get',
-				//dataType : 'script',
-        //async : true,
+				dataType : 'script',
+        async : true,
 
 				success: function(success){
 					// alert(success);
