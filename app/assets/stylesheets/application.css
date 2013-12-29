@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require bootstrap_and_overrides
 
  */
 * {
@@ -53,7 +54,7 @@ img {
 
 /** BEGIN wrapper **/
 #wrapper {
-	width: 1100px;
+	width: 1120px;
 	margin: auto auto;
 	text-align: left;
 }
@@ -152,12 +153,12 @@ img {
 
 /** BEGIN content **/
 #content {
-	clear: both;
-	width: 802px;
-	float: left;
-	padding-bottom: 10px;
-	margin-left: 149px;
-	margin-top: -9px;
+  clear: both;
+  float: left;
+  margin-left: 172px;
+  margin-top: -642px;
+  padding-bottom: 10px;
+  width: 799px;
 }
 	#featured {
 		border: 1px solid #DDDDDD;
@@ -257,6 +258,8 @@ img {
 #sidebar-left {
     /*float: left;*/
     width: 150px;
+    margin-top: 56px;
+    margin-left: 23px;
     /*margin-top: -320!important;*/
     /*background-color: red;*/
 }
@@ -264,6 +267,7 @@ img {
 #sidebar {
 	width: 150px;
 	float: right;
+	margin-top: 41px;
 	/*background-color: red;*/
 }
 	#sidebar .box {

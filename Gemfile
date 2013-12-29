@@ -8,6 +8,8 @@ gem 'mysql2'
 group :production do
 	gem 'pg' , '>= 0.12.2'
 	gem 'rails_12factor'
+	gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 end
 
 # Gems used only for assets and not required
@@ -26,7 +28,7 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'activeadmin'
 gem 'devise' 
-
+gem "twitter-bootstrap-rails", "~> 2.2.8"
 
 
 # To use ActiveModel has_secure_password
