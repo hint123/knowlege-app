@@ -1,12 +1,13 @@
-%table{border: "2"}
-  %tr
-    %th Board name
-    %th Post name
-    %th Qualification
-    %th Last date
-    %th More
-  %tr
-    %td
+%table.table.table-striped.table-bordered.table-hover{:border=>"10px solid #ccc;"}
+  %caption  
+  %thead
+    %tr.error
+      %th Board name
+      %th Post name
+      %th Qualification
+      %th Last date
+      %th More
+  %tbody
   - banks.each do |job|
     %tr
       %td= job.bank_name
@@ -18,5 +19,4 @@
       / <td></haml_block><haml_silent></haml_silent><haml_block></td>
       / <td></haml_block><haml_silent></haml_silent><haml_block></td>
       / <td></haml_block><haml_silent></haml_silent><haml_block></td>
-%br/
- 
+  %br/

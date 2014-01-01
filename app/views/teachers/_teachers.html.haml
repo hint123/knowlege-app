@@ -1,17 +1,22 @@
-- unless teachers.blank? 
-  %table{border: "2"}
-    %tr
+%table.table.table-striped.table-bordered.table-hover{:border=>"10px solid #ccc;"}
+  %caption  
+  %thead
+    %tr.error
       %th Board name
       %th Post name
       %th Qualification
       %th Last date
       %th More
-    - teachers.each do |teacher|
-      %tr
-        %td= teacher.board_name
-        %td= teacher.post_name
-        %td= teacher.qualification
-        %td= teacher.last_date
-        %td= link_to teacher.more,'#'
-
-    
+  %tbody
+  - teachers.each do |teacher|
+    %tr
+      %td= teacher.board_name
+      %td= teacher.post_name
+      %td= teacher.qualification
+      %td= teacher.last_date
+      %td= link_to teacher.more,'#'
+      / <td></haml_block><haml_silent></haml_silent><haml_block></td>
+      / <td></haml_block><haml_silent></haml_silent><haml_block></td>
+      / <td></haml_block><haml_silent></haml_silent><haml_block></td>
+      / <td></haml_block><haml_silent></haml_silent><haml_block></td>
+  %br/
